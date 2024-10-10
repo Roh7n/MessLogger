@@ -30,6 +30,12 @@
 
     </div>
 
+    <div class="form-floating mb-3">
+        <input asp-for="Input.PhoneNumber" class="form-control" autocomplete="phonenumber" aria-requried="true" placeholder="phonenum" />
+        <label asp-for="Input.PhoneNumber">Phone Number</label>
+        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+    </div>
+
 
     <div class="form-floating mb-3">
         <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />

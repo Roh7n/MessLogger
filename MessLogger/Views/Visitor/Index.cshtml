@@ -16,16 +16,16 @@
             </tr>
         </thead>
         <tbody class="table-group-divider">
-z
-                @foreach (var visitor in Model)
-                {
-                    <tr>
-                        <td>@visitor.Name</td>
-                        <td>@visitor.ContactNumber</td>
-                        <td>@visitor.PaymentDate</td>
-                        <td>@visitor.PaymentStatus</td>
-                    </tr>
-                }
+            
+            @foreach (var visitor in Model)
+            {
+                <tr>
+                    <td>@visitor.FirstName @visitor.LastName</td>
+                    <td>@visitor.PhoneNumber</td>
+                    <td>@visitor.PaymentDate</td>
+                    <td>@visitor.PaymentStatus</td>
+                </tr>
+            }
 
         </tbody>
     </table>
