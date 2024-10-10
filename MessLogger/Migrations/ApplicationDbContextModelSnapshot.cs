@@ -80,6 +80,20 @@ namespace MessLogger.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "0a905298-c7c1-4847-ab10-e06daaccff58",
+                            Name = "admin",
+                            NormalizedName = "admin"
+                        },
+                        new
+                        {
+                            Id = "115f0ac9-64cf-4570-904d-bf87f24f7134",
+                            Name = "user",
+                            NormalizedName = "user"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
