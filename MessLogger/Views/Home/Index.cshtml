@@ -3,8 +3,19 @@
 }
 
 
-<div class="d-flex justify-content-center align-items-center vh-100 ">
-    <h1 class="display-2 text-justify text-decoration-underline">Welcome To Mess Logger</h1>
-    
-</div> 
+<link rel="stylesheet" href="~/css/custom.css" />
+<div id="welcome-message" class=" welcome-message d-flex justify-content-center align-items-center vh-100 ">
+    <h1 class="display-2 text-justify text-decoration-underline">@ViewBag.WelcomeMessage</h1>
+</div>
 
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Wait for 3 seconds before starting to fade the message
+            setTimeout(function () {
+                $('#welcome-message').addClass('fade-out');
+            }, 1000); // 3000 milliseconds = 3 seconds
+        });
+    </script>
+}

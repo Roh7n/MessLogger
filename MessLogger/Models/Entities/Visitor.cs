@@ -6,7 +6,7 @@ namespace MessLogger.Models.Entities
 {
     public class Visitor : IdentityUser
     { 
-        //public string Name { get; set; }
+        
 
         [PersonalData]
         [Column(TypeName = "nvarchar(100)")]
